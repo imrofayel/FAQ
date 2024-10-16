@@ -55,7 +55,7 @@ export default function FAQ() {
   }, []);
 
   if (isLoading) {
-    return <div className="text-center">Loading FAQ data...</div>;
+    return <div className="text-center text-gray-300 text-2xl">Loading FAQ data...</div>;
   }
 
   if (error) {
@@ -67,38 +67,38 @@ export default function FAQ() {
   }
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-6 bg-white">
-      <h1 className="text-4xl font-bold text-center mb-2 text-gray-800">
+    <div className="w-[55%] flex flex-col items-center justify-center p-6 blur-[0.10px] mb-8">
+      <h1 className="helvetica text-[44px] font-semibold text-center mb-2 text-gray-800">
         {faqData.title}
       </h1>
-      <p className="text-center text-gray-600 mb-8">{faqData.description}</p>
-      <Tabs defaultValue={faqData.tabs[0]} onValueChange={setActiveCategory}>
-        <TabsList className="flex justify-center space-x-2 mb-8">
+      <p className="w-[85%] leading-relaxed text-[18px] text-center text-gray-400 mb-5">{faqData.description}</p>
+      <Tabs defaultValue={faqData.tabs[0]} onValueChange={setActiveCategory} className="w-full flex flex-col items-center">
+        <TabsList className="justify-center space-x-2 mb-4 bg-gray-50/80 border border-gray-100 py-4 items-center px-1 rounded-full inner">
           {faqData.tabs.map((tab) => (
             <TabsTrigger
               key={tab}
               value={tab}
-              className="px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ease-in-out"
+              className="px-6 rounded-full text-[15px] transition-colors duration-200 ease-in-out py-1 data-[state=active]:text-gray-800 text-gray-400 data-[state=active]:inner data-[state=active]:border data-[state=active]:border-gray-100 data-[state=active]:shadow-none data-[state=active]:transition-none"
             >
               {tab}
             </TabsTrigger>
           ))}
         </TabsList>
         {faqData.tabs.map((tab) => (
-          <TabsContent key={tab} value={tab}>
+          <TabsContent key={tab} value={tab} className="w-full">
             <Accordion type="single" collapsible className="w-full space-y-4">
               {faqData.faqs[tab]?.map((faq, index) => (
                 <AccordionItem
                   key={index}
                   value={`item-${index}`}
-                  className="border border-gray-200 rounded-lg shadow-sm"
+                  className="border border-gray-100 rounded-2xl inner2x"
                 >
-                  <AccordionTrigger className="flex justify-between items-center w-full px-6 py-4 text-left text-gray-800 hover:bg-gray-50 transition-colors duration-200 ease-in-out">
-                    <span className="text-base font-medium">
+                  <AccordionTrigger className="flex justify-between items-center w-full px-4 py-4 text-[18px] text-left text-gray-800 hover:no-underline">
+                    <span className="text-[16.5px] text-gray-700">
                       {faq.question}
                     </span>
                   </AccordionTrigger>
-                  <AccordionContent className="px-6 py-4 text-gray-600">
+                  <AccordionContent className="px-4 py-4 pt-0 text-base text-gray-400 leading-relaxed">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

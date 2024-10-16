@@ -4,13 +4,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-.inter {
-  font-family: "Inter", sans-serif;
+@import url('https://fonts.cdnfonts.com/css/helvetica-255');
+
+.helvetica {
+  font-family: "Helvetica", sans-serif;
   font-optical-sizing: auto;
 }
 
+.inner {
+  box-shadow: inset 0 -1px 1px 0 #f3f3f3;
+}
+
+.inner2x {
+  box-shadow: inset 0 -1px 1.8px 0 #e7e7e7;
+}
+
 body {
-  font-family: Inter, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 @layer utilities {
