@@ -28,7 +28,7 @@ export default function StyledFAQComponent() {
     const [faqData, setFaqData] = useState<FAQData | null>(null)
     const [isLoading, setIsLoading] = useState(true)
     const [error, setError] = useState<string | null>(null)
-    const [activeCategory, setActiveCategory] = useState("")
+    const [,setActiveCategory] = useState("")
   
     useEffect(() => {
       const fetchFAQData = async () => {
