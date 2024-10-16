@@ -1,0 +1,68 @@
+{
+    "title": "Frequently Asked Questions",
+    "description": "Get clear answers to your questions, so you can focus on what matters—acing your interviews with confidence.",
+    "tabs": [
+      "All",
+      "Platform",
+      "Pricing",
+      "Subscription"
+    ],
+    "faqs": {
+      "All": [
+        {
+          "question": "How does the platform work?",
+          "answer": "Our platform allows users to practice interview scenarios in real time with AI or a friend, providing feedback and insights after each session."
+        },
+        {
+          "question": "What pricing plans do you offer?",
+          "answer": "We offer three pricing plans: Free, Standard, and Pro, each with different features suited for various needs."
+        },
+        {
+          "question": "Can I cancel my subscription?",
+          "answer": "Yes, you can cancel your subscription anytime from your account settings without any cancellation fees."
+        }
+      ],
+      "Platform": [
+        {
+          "question": "Is the platform suitable for all job roles?",
+          "answer": "Yes, our platform is designed to cater to a wide range of job roles, with customizable questions based on the user's preferences."
+        },
+        {
+          "question": "Can I practice with a friend?",
+          "answer": "Absolutely! You can use the 'Practice with a Friend' mode to simulate real interview scenarios with constructive feedback."
+        },
+        {
+          "question": "What technology is used on the platform?",
+          "answer": "We use cutting-edge AI and natural language processing (NLP) to generate feedback and simulate interview scenarios."
+        }
+      ],
+      "Pricing": [
+        {
+          "question": "What are the available pricing plans?",
+          "answer": "We offer three plans: Free (limited access), Standard (full platform access), and Pro (full access with additional premium features)."
+        },
+        {
+          "question": "Do you offer discounts for long-term subscriptions?",
+          "answer": "Yes, we offer discounts for annual subscriptions as well as occasional promotions."
+        },
+        {
+          "question": "Is there a free trial available?",
+          "answer": "Yes, we offer a 14-day free trial for the Standard and Pro plans so you can explore all features."
+        }
+      ],
+      "Subscription": [
+        {
+          "question": "How do I upgrade my subscription?",
+          "answer": "You can upgrade your subscription anytime from your account settings. The new plan will be applied immediately."
+        },
+        {
+          "question": "What happens if I miss a payment?",
+          "answer": "If you miss a payment, your subscription will be paused until the payment is resolved. You won’t lose your data during this time."
+        },
+        {
+          "question": "Can I switch between plans?",
+          "answer": "Yes, you can switch between plans at any time. The changes will take effect immediately, and you will be billed accordingly."
+        }
+      ]
+    }
+  }
