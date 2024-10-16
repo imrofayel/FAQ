@@ -8,7 +8,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { ChevronDown } from "lucide-react"
 
 type FAQItem = {
   question: string
@@ -90,7 +89,6 @@ export default function StyledFAQComponent() {
                 >
                   <AccordionTrigger className="flex justify-between items-center w-full px-6 py-4 text-left text-gray-800 hover:bg-gray-50 transition-colors duration-200 ease-in-out">
                     <span className="text-base font-medium">{faq.question}</span>
-                    <ChevronDown className="h-5 w-5 text-gray-500 transition-transform duration-200" />
                   </AccordionTrigger>
                   <AccordionContent className="px-6 py-4 text-gray-600">
                     {faq.answer}
