@@ -67,7 +67,7 @@ export default function FAQ() {
   }
 
   return (
-    <div className="md:w-[55%] flex flex-col items-center justify-center sm:p-6 blur-[0.10px] mb-8 w-full">
+    <div className="md:w-[55%] flex flex-col items-center justify-center sm:p-6 mb-8 w-full">
       <h1 className="helvetica text-[27px] sm:text-[44px] font-semibold text-center mb-2 text-gray-800 leading-relaxed sm:p-0 px-3">
         {faqData.title}
       </h1>
