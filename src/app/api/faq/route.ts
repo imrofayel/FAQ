@@ -3,7 +3,6 @@ import faqData from '@/data/faq-data.json'
 
 export async function GET() {
   try {
-    // Simulate a delay to show loading state (remove in production)
     await new Promise(resolve => setTimeout(resolve, 1000))
 
     return NextResponse.json(faqData)

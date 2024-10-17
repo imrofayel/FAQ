@@ -67,18 +67,18 @@ export default function FAQ() {
   }
 
   return (
-    <div className="w-[55%] flex flex-col items-center justify-center p-6 blur-[0.10px] mb-8">
-      <h1 className="helvetica text-[44px] font-semibold text-center mb-2 text-gray-800">
+    <div className="md:w-[55%] flex flex-col items-center justify-center sm:p-6 blur-[0.10px] mb-8 w-full">
+      <h1 className="helvetica text-2xl sm:text-[44px] font-semibold text-center mb-2 text-gray-800 leading-relaxed sm:p-0 px-3">
         {faqData.title}
       </h1>
-      <p className="w-[85%] leading-relaxed text-[18px] text-center text-gray-400 mb-5">{faqData.description}</p>
+      <p className="md:w-[85%] w-full leading-relaxed sm:text-[18px] text-center text-gray-400 mb-5 sm:p-0 px-3">{faqData.description}</p>
       <Tabs defaultValue={faqData.tabs[0]} onValueChange={setActiveCategory} className="w-full flex flex-col items-center">
-        <TabsList className="justify-center space-x-2 mb-4 bg-gray-50/80 border border-gray-100 py-4 items-center px-1 rounded-full inner">
+        <TabsList className="justify-center sm:scale-100 scale-95 sm:space-x-2 mb-4 bg-gray-50/80 border border-gray-100 py-4 items-center px-1 rounded-full inner">
           {faqData.tabs.map((tab) => (
             <TabsTrigger
               key={tab}
               value={tab}
-              className="px-6 rounded-full text-[15px] transition-colors duration-200 ease-in-out py-1 data-[state=active]:text-gray-800 text-gray-400 data-[state=active]:inner data-[state=active]:border data-[state=active]:border-gray-100 data-[state=active]:shadow-none data-[state=active]:transition-none"
+              className="sm:px-6 rounded-full text-[15px] transition-colors duration-200 ease-in-out py-1 data-[state=active]:text-gray-800 text-gray-400 data-[state=active]:inner data-[state=active]:border data-[state=active]:border-gray-100 data-[state=active]:shadow-none data-[state=active]:transition-none"
             >
               {tab}
             </TabsTrigger>
@@ -86,14 +86,14 @@ export default function FAQ() {
         </TabsList>
         {faqData.tabs.map((tab) => (
           <TabsContent key={tab} value={tab} className="w-full">
-            <Accordion type="single" collapsible className="w-full space-y-4">
+            <Accordion type="single" collapsible className="sm:p-0 p-1 w-full space-y-3 sm:space-y-4 scale-95 sm:scale-100">
               {faqData.faqs[tab]?.map((faq, index) => (
                 <AccordionItem
                   key={index}
                   value={`item-${index}`}
-                  className="border border-gray-100 rounded-2xl inner2x"
+                  className="border border-gray-100 rounded-2xl inner"
                 >
-                  <AccordionTrigger className="flex justify-between items-center w-full px-4 py-4 text-[18px] text-left text-gray-800 hover:no-underline">
+                  <AccordionTrigger className="flex justify-between items-center w-full px-4 sm:py-4 py-3 text-[18px] text-left text-gray-800 hover:no-underline">
                     <span className="text-[16.5px] text-gray-700">
                       {faq.question}
                     </span>
